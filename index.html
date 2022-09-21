@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mascot</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- main top heading -->
+      <h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PERSONALITY?</h1>
+
+      <!-- outer box  -->
+      <div class="outer">
+        <!-- input form  -->
+        <div class="info">
+          <label for="">Enter Your Name</label>
+          <input
+            type="text"
+            name=""
+            class="in"
+            id="nameid"
+            placeholder="FILL_ME"
+          />
+        </div>
+
+        <!-- image  -->
+        <div class="img">
+          <img src="profile_img.jpg" alt="Failed_To_Load_Image" id="image" />
+          <script>
+            const myText = document.getElementById("nameid");
+            myText.addEventListener("keypress", function (e) {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                getValue();
+              }
+            });
+          </script>
+        </div>
+
+        <!-- button  -->
+        <button onclick="getValue()" id="btn">Click_Me</button>
+      </div>
+    </section>
+    <hr />
+    <div class="footer">
+      <a href="">Ujjwal Raturi</a>
+    </div>
+  </body>
+</html>
