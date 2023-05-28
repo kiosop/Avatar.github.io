@@ -23,7 +23,8 @@ function getValue() {
     const str= document.getElementById("nameid");
     
     const img=document.getElementById('image');
-    img.setAttribute('src',`https://joeschmoe.io/api/v1/${str.value}`);
+//     img.setAttribute('src',`https://joeschmoe.io/api/v1/${str.value}`);
+    img.setAttribute('src',`https://api.multiavatar.com/${str.value}.png`);
 
     const inputs=document.querySelectorAll('input');
     inputs.forEach(input=> input.value="");
